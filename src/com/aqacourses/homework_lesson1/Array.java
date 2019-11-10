@@ -1,4 +1,4 @@
-package homework_lesson1;
+package com.aqacourses.homework_lesson1;
 /* Создаем массив с типом данных int размером 4.
 С помощью if / else if берем каждую ячейку и если элемент четный выводим в консоль слово True.
 Если нечетный False. Цикл не используйте. До них еще доберемся.

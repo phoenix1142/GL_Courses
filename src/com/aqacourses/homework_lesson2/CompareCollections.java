@@ -1,4 +1,4 @@
-package homework_lesson2;
+package com.aqacourses.homework_lesson2;
 /*
 3. Создаем HashSet в который добавляем следующие строки, каждая строка - новая ячейка:
 pineapple
@@ -48,16 +48,16 @@ public class CompareCollections {
 
 
 
-        String str1 = new String("plum");                          // заведение объектов для второй коллекции
-        String str2 = new String("nut");
-        String str3 = new String("apple");
-        String str4 = new String("peach");
-        String str5 = new String("pear");
-        String str6 = new String("cherry");
-        String str7 = new String("orange");
-        String str8 = new String("watermelon");
-        String str9 = new String("apricot");
-        String str10 = new String("pineapple");
+        String str1 = ("plum");                          // заведение объектов для второй коллекции
+        String str2 =("nut");
+        String str3 =("apple");
+        String str4 =("peach");
+        String str5 =("pear");
+        String str6 =("cherry");
+        String str7 =("orange");
+        String str8 =("watermelon");
+        String str9 =("apricot");
+        String str10 =("pineapple");
 
 
         LinkedList<String> listCol = new LinkedList<>();        // создание второй коллекции
@@ -93,8 +93,8 @@ public class CompareCollections {
             System.out.println(k.next());
 
         System.out.println("------------------");
-        System.out.println("ThirdCol after ratain:");
-        thirdCol.retainAll(thirdCol);
+        System.out.println("ThirdCol after retain:");
+        hashSetCol.retainAll(listCol);
 
 //        System.out.println("11"+thirdCol);
 

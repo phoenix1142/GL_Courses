@@ -1,4 +1,4 @@
-package homework_lesson2;
+package com.aqacourses.homework_lesson2;
 /*1. Создаем HashMap и заносим туда следующие пары ключ-значение
 "Test", 7
 "Class", 4.5

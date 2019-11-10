@@ -1,4 +1,4 @@
-package homework_lesson2;
+package com.aqacourses.homework_lesson2;
 /*
 2. Создаем ArrayList заносим туда любые значения с типом данных String.
 Сортируем так чтобы ячейки стали в обратном порядке. То есть делаем реверс.

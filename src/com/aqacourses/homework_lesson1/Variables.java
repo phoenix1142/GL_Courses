@@ -1,4 +1,4 @@
-package homework_lesson1;
+package com.aqacourses.homework_lesson1;
 /*
 Создать три переменные с типом данных int, double, String соответственно. Присвоить значение только переменной с типом int.
 Запарсить её значение как строку и присвоить переменной с типом String.
