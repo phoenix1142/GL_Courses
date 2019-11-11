@@ -10,9 +10,13 @@ package com.aqacourses.homework_lesson3;
 
 public class Runner {
     public static void main(String[] args) {
+        Print print = new PrintImpl();
+        System.out.println(print.returnDayNameByNum(2));
+        System.out.println(print.returnDayNumByName("MONDAY"));
+        print.printPhrase();
         AnotherClass anotherClass = new AnotherClass(4);
         anotherClass.printPhrase();
-        Class c = new Class();
+
 
     }
 }

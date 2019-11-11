@@ -8,10 +8,6 @@ returnDayNumByName который принимает строку name и воз
 public interface Print {
     void printPhrase();
     String returnDayNameByNum(int numOfDay);        // должен возвращать string
-    int returnDayNameByNum(String name);        // должен возвращать int
-
-
-
-
+    int returnDayNumByName(String name);        // должен возвращать int
 
 }

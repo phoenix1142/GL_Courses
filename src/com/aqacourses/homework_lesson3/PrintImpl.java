@@ -8,7 +8,7 @@ returnDayNameByNum возвращает имя дня по номеру.
 returnDayNumByName возвращает номер по имени.
 Используйте созданный энам с константами. Можете сделать switch
  */
-public class Class implements Print {
+public class PrintImpl implements Print {
 
     @Override
     public void printPhrase() {
@@ -19,49 +19,46 @@ public class Class implements Print {
     public String returnDayNameByNum(int numOfDay) {
         String day;
         switch (numOfDay){
-            case 1: day = MONDAY.getDay();
+            case 1:day = DaysOfWeek.MONDAY.getDay();
                     break;
-            case 2: day = TUESDAY.getDay();
+            case 2: day = DaysOfWeek.TUESDAY.getDay();
                     break;
-            case 3: day = WEDNESDAY.getDay();
+            case 3: day = DaysOfWeek.WEDNESDAY.getDay();
                     break;
-            case 4: day = THURSDAY.getDay();
+            case 4: day = DaysOfWeek.THURSDAY.getDay();
                     break;
-            case 5: day = FRIDAY.getDay();
+            case 5: day = DaysOfWeek.FRIDAY.getDay();
                     break;
-            case 6: day = SATURDAY.getDay();
+            case 6: day = DaysOfWeek.SATURDAY.getDay();
                     break;
-            case 7: day = SUNDAY.getDay();
+            case 7: day = DaysOfWeek.SUNDAY.getDay();
                     break;
             default:
                 day = "Нет такого дня!";
-                    break;
-
         }
     return day;
     }
 
     @Override
-    public int returnDayNameByNum(String name) {
+    public int returnDayNumByName(String name) {
         int numberOfDay;
         switch (name){
-            case MONDAY: numberOfDay = MONDAY.getNumberOfDay();
+            case "MONDAY":numberOfDay = DaysOfWeek.MONDAY.getNumberOfDay();
             break;
-            case TUESDAY: numberOfDay = TUESDAY.getNumberOfDay();
+            case "TUESDAY":numberOfDay = DaysOfWeek.TUESDAY.getNumberOfDay();
                 break;
-            case WEDNESDAY: numberOfDay = WEDNESDAY.getNumberOfDay();
+            case "WEDNESDAY": numberOfDay = DaysOfWeek.WEDNESDAY.getNumberOfDay();
                 break;
-            case THURSDAY: numberOfDay = THURSDAY.getNumberOfDay();
+            case "THURSDAY": numberOfDay = DaysOfWeek.THURSDAY.getNumberOfDay();
                 break;
-            case FRIDAY: numberOfDay = FRIDAY.getNumberOfDay();
+            case "FRIDAY": numberOfDay = DaysOfWeek.FRIDAY.getNumberOfDay();
                 break;
-            case SATURDAY: numberOfDay = SATURDAY.getNumberOfDay();
+            case "SATURDAY": numberOfDay = DaysOfWeek.SATURDAY.getNumberOfDay();
                 break;
-            case SUNDAY: numberOfDay = SUNDAY.getNumberOfDay();
+            case "SUNDAY": numberOfDay = DaysOfWeek.SUNDAY.getNumberOfDay();
                 break;
                 default:
-                    System.out.println("Такого дня не существует!");
-                    break;
+                    return -1;
         }
         return numberOfDay;
     }

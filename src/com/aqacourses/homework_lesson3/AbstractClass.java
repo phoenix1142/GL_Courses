@@ -6,7 +6,8 @@ package com.aqacourses.homework_lesson3;
 
  */
 public abstract class AbstractClass {
-    AbstractClass(int numOfMonth){ }   //конструктор
+    private int numOfMonth;
+   public AbstractClass(int numOfMonth){ }   //конструктор
 
     abstract void printPhrase();       // абстрактный метод
 
@@ -26,11 +27,26 @@ public abstract class AbstractClass {
 
         private String month;
 
-        MonthsOfTheYear(String month) {
-        this.month = month;
-        }
+       MonthsOfTheYear(String month) { this.month = month; }
 
-        public String getMonthNameByNum(int numOfMonth){return month;}
+        public String getMonthNameByNum(int numOfMonth){
+            switch (numOfMonth){
+                case 1:return MonthsOfTheYear.JANAURY.name();
+                case 2:return MonthsOfTheYear.FEBRUARY.name();
+                case 3:return MonthsOfTheYear.MARCH.name();
+                case 4:return MonthsOfTheYear.APRIL.name();
+                case 5:return MonthsOfTheYear.MAY.name();
+                case 6:return MonthsOfTheYear.JUNE.name();
+                case 7:return MonthsOfTheYear.JULY.name();
+                case 8:return MonthsOfTheYear.AUGUST.name();
+                case 9:return MonthsOfTheYear.SEPTEMBER.name();
+                case 10:return MonthsOfTheYear.OCTOBER.name();
+                case 11:return MonthsOfTheYear.NOVEMBER.name();
+                case 12:return MonthsOfTheYear.DECEMBER.name();
+                default: return "Нет такого месяца";
+
+            }
+        }
     }
 
 

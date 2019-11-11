@@ -5,7 +5,7 @@ package com.aqacourses.homework_lesson3;
  */
 public class AnotherClass extends AbstractClass {
 
-    AnotherClass(int numOfMonth) {
+   public AnotherClass(int numOfMonth) {
         super(numOfMonth);
     }
 
@@ -13,4 +13,6 @@ public class AnotherClass extends AbstractClass {
     void printPhrase() {
         System.out.println("Всё ещё тяжко!");
     }
+
+
 }
